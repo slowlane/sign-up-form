@@ -153,13 +153,15 @@ form {
     
     gap: 4px;
 
+    color: red;
+
 }
 
 
 
 .label-input label,
 .label-input input{
-    
+    color: rgba(0,0,0,0.90);
     flex: 1;
 }
 

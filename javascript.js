@@ -8,10 +8,10 @@ function validatePassword(){
         // make a paragraph and remove all paras.. i guess?
         if(passwordDiv.innerHTML.indexOf("*") !== 145){
             passwordDivChildren.forEach(c => c.nodeType === Node.TEXT_NODE && c.remove());
-            const textToAdd = document.createTextNode("* The two passwords are not the same!");
-            textToAdd.style.color = "red";
-            passwordDiv.appendChild(textToAdd);
-            //password.after("* The two passwords are not the same!");
+            //const textToAdd = document.createTextNode("* The two passwords are not the same!");
+            //textToAdd.style.color = "red";
+            //passwordDiv.appendChild(textToAdd);
+            password.after("* The two passwords are not the same!");
         }
 
     }
