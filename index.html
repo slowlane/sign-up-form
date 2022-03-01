@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="left-side">
+        <div id="logo-div">
+            <img src="./img/odin-lined.png" alt="Logo image from the Odin Project" height="100px" width="100px">
+            ODIN
+        </div>
+    </div>
+
+    <div class="right-side">
+        <div class="right-side-info-header">
+            <div class="text-constrain">
+                <p>
+                    This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams.
+                <br>Sign up now to get started!   
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+        </div>
+        <div class="right-side-main-content">
+            
+            
+            <h1>Let's do this!</h1>
+                <form id ="myform" action="" method="GET">
+                
+                <div class="label-input">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+
+                <div class="label-input">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+
+                <div class="label-input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="label-input">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="tel" id="phonenumber" name="phonenumber">
+                </div>
+
+                <div id="comparePW"class="label-input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="label-input">
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmpassword" name="confirmpassword" required>
+                </div>
+
+                
+                </form>
+                <button form="myform" type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            
+        </div>
+
+    </div>
+</body>
+</html>

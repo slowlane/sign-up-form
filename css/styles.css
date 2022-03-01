@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(../font/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-side {
+    display: flex;
+
+    width: max(400px, 48%);
+    height: 100vh;
+
+    background-image: url("../img/photo-1585202900225-6d3ac20a6962.jpg");
+    background-size: cover;
+    
+}
+
+#logo-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30%;
+    height: min(140px, 15vh);
+    width: auto;
+
+    background-color: rgba(0,0,0,0.50);
+
+    font-family: odinFont;
+    font-size: 90px;
+
+    color: white;
+}
+
+
+
+/* Below is for the right side */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(190, 205, 209, 0.171);
+
+    width: 100%;
+    height: 100vh;
+}
+
+.right-side-info-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: rgba(0,0,0,0.15);*/
+  
+    height: min(400px, 35%);
+    width: 100%;
+    
+    line-height: 2.1rem;
+
+
+}
+
+/* Just to keep things in a tighter box */
+.text-constrain {
+    margin-left: 10%;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side-info-header p {
+    font-size: 30px;
+    font-weight: bold;
+
+
+    margin-top: min(30px, 10%);
+    margin-bottom: min(30px, 10%);
+}
+
+/* Main Content starts here (form) */
+
+
+.right-side-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: max(40vh, 39%);
+    width: 100%;
+
+    background-color: white;
+
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.30);
+}
+
+.right-side-main-content h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    
+    align-self: flex-start;
+    
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.right-side-main-content p {
+    align-self: flex-start;
+
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.right-side-main-content a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-self: flex-start;
+    
+    margin-left: 5%;
+    gap: 20px;
+    
+    width: 80%;
+
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+ 
+    flex-wrap: nowrap;
+    
+    margin-right: min(60px, 10%);
+    width: 35%;
+    
+    gap: 4px;
+
+}
+
+
+
+.label-input label,
+.label-input input{
+    
+    flex: 1;
+}
+
+.label-input label {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+}
+
+.label-input input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    border-radius: 4px;
+    
+}
+
+.label-input input:hover {
+    border-color: lightblue;
+}
+
+.label-input input:required:invalid {
+    border-color: red;
+   
+}
+
+/*.label-input input:after {
+    content: '* The passwords do not match';
+    color: red;
+} */
+
+
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+
+    font-size: 1.5rem;
+    
+    border-radius: 8px;
+    
+    margin-left: 5%;
+    margin-top: 6%;
+    padding: 12px 48px;
+
+    align-self: flex-start;
+
+
+}
