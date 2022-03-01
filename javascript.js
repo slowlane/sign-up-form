@@ -20,6 +20,10 @@ function validatePassword(){
 
     }
 
+    if(password.value.length === 0 && confirmPassword.value.length === 0){
+        passwordDivChildren.forEach(c => c.nodeType === Node.TEXT_NODE && c.remove());
+    }
+
 };
 
 
