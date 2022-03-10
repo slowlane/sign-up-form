@@ -103,8 +103,8 @@ body {
     align-items: center;
     position: relative;
 
-    height: clamp(390px, 42%, 660px);
-    width: clamp(850px, 100%, 1600px);
+    height: clamp(390px, 42%, 420px);
+    width: clamp(850px, 100%, 3000px);
 
     background-color: white;
 
@@ -198,7 +198,7 @@ form {
 
 #error {
     position: absolute;
-    left: 7%;
+    left: 6%;
     top: 92%;
 }
 
