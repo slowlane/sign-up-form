@@ -14,8 +14,6 @@ body {
     width: 100vw;
     flex-wrap: nowrap;
     background-color: rgba(190, 205, 209, 0.171);
-
-    /* overflow-x:hidden !important;   */
 }
 
 .left-side {
@@ -23,7 +21,6 @@ body {
 
     width: max(400px, 40%);
     height: clamp(900px, 100vh, 1400px);
-    /* height: 100vh; */
 
     background-image: url("../img/photo-1585202900225-6d3ac20a6962.jpg");
     background-size: cover;
@@ -38,7 +35,6 @@ body {
 
     margin-top: 30%;
     height: clamp(150px, 12vh, 250px);
-    /* height: min(140px, 15vh); */
     width: auto;
 
     background-color: rgba(0,0,0,0.50);
@@ -82,8 +78,8 @@ body {
 
 /* Just to keep things in a tighter box */
 .text-constrain {
-    margin-left: 10%;
-    margin-right: 35%;
+    margin-left: 7%;
+    margin-right: 30%;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -157,13 +153,8 @@ form {
 .label-input {
     display: flex;
     flex-direction: column;
-/*  
-    flex-wrap: nowrap; */
-    
-    
-    /* margin-right: min(60px, 5%); */
+
     width: clamp(300px, 20vw, 300px);
-    /* width: 35%; */
     height: 7%;
     
     gap: 4px;
@@ -196,18 +187,14 @@ form {
 }
 
 .label-input input:hover {
-    border-color: lightblue;
+    border-color: rgb(50, 193, 241);
+    box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.10);
 }
 
 .label-input input:required:invalid {
     border-color: red;
    
 }
-
-/*.label-input input:after {
-    content: '* The passwords do not match';
-    color: red;
-} */
 
 #error {
     position: absolute;
