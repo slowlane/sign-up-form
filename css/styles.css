@@ -63,13 +63,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    /*background-color: rgba(0,0,0,0.15);*/
-  
-    /* height: min(400px, 35%); */
     height: clamp(250px, 35%, 600px);
     width: clamp(700px, 100%, 1400px);
-    /* width: 100%; */
-    /* width: clamp(px, 100%, 2460px); */
+
     
     line-height: 2.1rem;
 
@@ -85,8 +81,7 @@ body {
 }
 
 .right-side-info-header p {
-    font-size: 30px;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: bold;
 
 
